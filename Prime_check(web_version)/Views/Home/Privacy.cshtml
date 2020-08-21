@@ -1,0 +1,24 @@
+﻿@model Number
+
+@{
+    ViewData["Title"] = "Prime Checker";
+}
+<h1>@ViewData["Title"]</h1>
+
+<p>Enter The number to see if it is prime or not.</p>
+<form asp-action="Privacy" asp-controller="Home" method="POST">
+    <div>
+        <label asp-for="n"></label>
+        <input asp-for="n" />
+        <span asp-validation-for="n"></span>
+    </div>
+
+    <div>
+        <input type="submit" value="submit" />
+    </div>
+    <div>
+       
+    </div>
+
+
+</form>
